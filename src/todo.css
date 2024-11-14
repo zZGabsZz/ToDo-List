@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Pokemon';
+    src: url('./Fonte/PokemonSolid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.title {
+    font-family: 'Pokemon', sans-serif;
+    color: red;
+    font-size: 60px;
+}
+
+.o {
+    color: white;
+}
+
+.o2 {
+    color: white;
+}
+
+.list {
+    color: yellow;
+    margin-left: 20px;
+}
+
+body{
+    background-image: url('./assets/paper.png');
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.todo-wrapper {
+    display: grid;
+    grid-row: 20px 20px;
+    background-color: #0000007a;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border-style: solid;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto {
+    width: auto;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.397);
+    color: rgb(185, 44, 44);
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.texto::placeholder{
+    color: white;
+}
+
+.env {
+    background: linear-gradient(90deg, #FF0000 , #000000 , #FFF );
+    margin-bottom: 15px;
+}
+
+.todo-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.poke {
+    margin: -10px;
+    cursor: pointer;
+    background-color: #00000000;
+    border: none;
+    outline: none;
+    img{
+        width: 50px;
+    }
+}
+
+.poke:hover{
+    border: none;
+    outline: none;
+}
+
+.poke:focus {
+    border: none;
+    outline: none;
+}
+
+.item1 {
+    margin: 10px;
+    font-family: 'Pokemon', sans-serif;
+    margin-top: -20px;
+    font-size: 40px;
+}
+
+.check {
+    display: none;
+  }
+  
+  .checkbox-label img {
+    width: 30px; 
+    cursor: pointer; 
+    margin: 15px;
+  }
+  
+  .check:checked + .checkbox-label img {
+    content: url('./assets/pokeballs.png'); 
+  }
+
+  .check:checked + .checkbox-label + .item1{
+    text-decoration: line-through;
+    text-decoration-color: white;
+    color: rgba(255, 255, 255, 0.349);
+    text-decoration-thickness: 3px;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  
